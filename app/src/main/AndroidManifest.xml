@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="iteso.mx.itesogram">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:name=".ItesogramApplication"
         android:allowBackup="true"
@@ -12,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ActivityLogin"
+        <activity
+            android:name=".ActivityLogin"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity">
-        </activity>
-        <activity android:name=".ActivitySaveInParse"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".ActivityMain"></activity>
+        <activity android:name=".ActivitySaveInParse" />
+
     </application>
 
 </manifest>

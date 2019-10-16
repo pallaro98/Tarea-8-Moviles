@@ -15,7 +15,7 @@ class ActivityLogin : AppCompatActivity() {
 
         mLogin = find(R.id.activity_login_btn_login)
         mLogin.setOnClickListener {
-            startActivity<ActivitySaveInParse>()
+            startActivity<ActivityMain>()
         }
     }
 }
